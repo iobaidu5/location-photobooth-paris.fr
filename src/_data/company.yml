@@ -1,0 +1,19 @@
+####################
+# CONFIG
+####################
+name: BHinternet
+phone:  06 16 98 98 46
+
+email: kyoztu.anim@gmail.com
+
+address:  49 Rue du Borrégo 75020 PARIS
+
+website: 154
+
+recaptcha:
+  client: 6LeW3FEeAAAAAHfpYQvQ_PEfu_btZAdur28jfg90
+  server: 6LeW3FEeAAAAAMghZFWcgZmoeH-lCiePMnwwhaob
+
+lang: fr
+url:
+  notify: 'https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify'

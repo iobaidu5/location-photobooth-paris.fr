@@ -1,0 +1,82 @@
+<section class="slider">
+    <div class="slider_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="slider_content-head">Location de photobooth sur Paris, l’animation phare de vos
+                        événements !</h1>
+                    <a href="" class="slider_content-title">
+                        <span class="slider_content-title--span">Soirée entreprise</span>
+                    </a>
+                    <a href="" class="slider_content-title">
+                        <span class="slider_content-title--span">Evènement Privé</span>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="slider_form">
+                        <h2 class="slider_form-title">
+                            Devis simple et 100% gratuit
+                        </h2>
+                        <form class="form" id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
+                            <input type="hidden" name="lang" value="fr">
+                            <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                            <input type="hidden" name="type" value="contact" />
+                            <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                            <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                            <input type="hidden" name="firstName" value="" />
+                            <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control slider_form-input" id="name"
+                                                    name="name" placeholder="Nom">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control slider_form-input" id="phone"
+                                                    name="phone" placeholder="Téléphone">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control form-control slider_form-input"
+                                                    id="email" name="email" placeholder="E-mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form-control slider_form-input"
+                                                    id="message" name="message" placeholder="Message">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="{{ site.data.company.recaptcha.client }}">
+                                        </div>
+                                        <br />
+                                        <div id="contact-form-response"></div>
+                                        <input style="display: none" type="submit" value="Submit"
+                                            class="wpcf7-form-control wpcf7-submit" />
+                                    </div>
+                                    <div class="checkbox" style="margin-right: -7rem !important;">
+                                        <input name="condition" type="checkbox"
+                                            style="height:2rem; width:2rem; vertical-align: middle;" />
+                                        <span class="slider_form-label"
+                                            style="color: #fff !important; margin-left: 1rem; font-size: 1.2rem;">
+                                            En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                            de vos données par ce site *</span>
+                                        <i class="fa fa-info-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="slider_form-button form-submit"
+                                value="Submit">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

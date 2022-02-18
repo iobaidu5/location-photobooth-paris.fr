@@ -1,0 +1,149 @@
+---
+layout: default
+permalink: /devis
+---
+<section class="banner">
+    <div class="container">
+        <h1 class="banner_title">Devis gratuit</h1>
+    </div>
+</section>
+<section class="form p-7">
+    <div class="container">
+        <div id="devis">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form role="form" method="post" action="devis" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <fieldset>
+                                    <legend class="menu_content-title2" style="font-weight: 300 !important;">Coordonnées
+                                    </legend>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="firstname">Prénom</label>
+                                                <input required="" type="text" class="form_input" id="firstname"
+                                                    name="firstname" value="" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="lastname">Nom</label>
+                                                <input required="" type="text" class="form_input" id="lastname"
+                                                    name="lastname" value="" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="address">Adresse</label>
+                                                <input type="text" class="form_input" id="address" name="address"
+                                                    value="" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="zipcode">Code postal</label>
+                                                <input required="" type="text" class="form_input" id="zipcode"
+                                                    name="zipcode" value="" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="city">Ville</label>
+                                                <input type="text" class="form_input" id="city" name="city" value=""
+                                                    spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="email">E-mail</label>
+                                                <input required="" type="text" class="form_input" id="email"
+                                                    name="email" value="" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group has-feedback ">
+                                                <label class="form_label" for="phone">Téléphone</label>
+                                                <input required="" type="text" class="form_input" id="phone"
+                                                    name="phone" value="" spellcheck="false" data-ms-editor="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-sm-6">
+                                <fieldset>
+                                    <legend class="menu_content-title2" style="font-weight: 300 !important;">Demande
+                                    </legend>
+                                    <hr>
+                                    <div class="form-group has-feedback ">
+                                        <label class="form_label" for="phone">Votre évènement </label>
+                                        <input type="text" class="form_input" id="events1" name="events1" value=""
+                                            placeholder="" spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                    <div class="form-group has-feedback ">
+                                        <label class="form_label" for="phone">&nbsp;Lieu de l’événement </label>
+                                        <input type="text" class="form_input" id="lieu" name="lieu" value=""
+                                            placeholder="" spellcheck="false" data-ms-editor="true">
+                                    </div>
+
+                                    <div class="form-group has-feedback ">
+                                        <label class="form_label" for="phone">Estimation du nombre de personnes</label>
+
+                                        <input type="text" class="form_input" id="nombre" name="nombre" value=""
+                                            placeholder="" spellcheck="false" data-ms-editor="true">
+                                    </div>
+
+                                    <div class="form-group has-feedback ">
+                                        <label class="form_label" for="date1">Votre date souhaitée de
+                                            l'évènement</label>
+                                        <div class="input-group bootstrap-datepicker">
+                                            <input type="date" class="form_input" id="date1" placeholder=""
+                                                data-date-format="dd/mm/yyyy" name="date1" value="" spellcheck="false"
+                                                data-ms-editor="true">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group has-feedback ">
+                                        <label class="form_label" for="message">Message</label>
+                                        <textarea rows="6" name="message" class="form_textarea" id="message"
+                                            spellcheck="false" data-ms-editor="true"></textarea>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}"></div>
+                            <br />
+                            <div id="devis-form-response"></div>
+                        </div>
+                        <div class="checkbox d-flex">
+                            <input name="condition" type="checkbox"
+                                style="height:2rem; width:2rem; vertical-align: middle; margin-right: 1rem;" />
+                            <span class="contact_content-form--label" style="font-size: 1.4rem;">
+                                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                de vos données par ce site *</span>
+                            <i class="fa fa-info-square" aria-hidden="true"></i>
+                        </div>
+                        <br>
+                        <div class="buttondevis text-center">
+                            <button type="reset" class="button annuler form_button2">Annuler</button>
+                            <button type="submit" name="devis" value="envoyer"
+                                class="button form_button form-submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

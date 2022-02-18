@@ -1,0 +1,131 @@
+<section class="topbar">
+    <div class="container">
+        <div class="topbar_content">
+            <div class="topbar_content-info">
+                <p class="topbar_content-info--p">
+                    <i class="fas fa-phone"></i> <a href="tel:{{site.data.company.phone}}"
+                        class="topbar_content-info--link">{{site.data.company.phone}}</a>
+                </p>
+                <p class="topbar_content-info--p">
+                    <i class="fas fa-envelope"></i> <a href="mailto:{{site.data.company.email}}"
+                        class="topbar_content-info--link">{{site.data.company.email}}</a>
+                </p>
+                <p class="topbar_content-info--p">
+                    <i class="fas fa-map-marker-alt"></i> <a href=""
+                        class="topbar_content-info--link">{{site.data.company.address}}</a>
+                </p>
+            </div>
+            <div class="topbar_content-social">
+                <p class="topbar_content-info--p">
+                    <i class="fab fa-facebook-f"></i>
+                </p>
+                <p class="topbar_content-info--p">
+                    <i class="fab fa-google-plus"></i>
+                </p>
+                <p class="topbar_content-info--p">
+                    <i class="fab fa-youtube"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Navbar">
+    <div class="container-fluid">
+        <div class="row Navbar_row">
+            <div class="col-md-2">
+                <div class="navbar-brand Navbar_image">
+                    <img src="{{site.baseurl}}/assets/img/logo.png" class="Navbar_image-img" alt="Company Logo" />
+                </div>
+            </div>
+            <div class="col-md-8">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler toggle-button ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav Navbar_nav ml-auto">
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link Navbar_nav-link" href="{% link accueil.html %}">Accueil</a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link Navbar_nav-link pt-0 mt-0" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a href="{% link evenement-prive.html %}"
+                                            class="nav-link Navbar_nav-link mt-0 pt-0">Evènement Privé</a>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item nav-link Navbar_nav-link selected"
+                                            href="{% link animation-anniversaire.html %}">Animation anniversaire</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link borne-a-selfie.html %}">Borne à selfie</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link dj-mariage.html %}">DJ mariage</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link Navbar_nav-link pt-0 mt-0" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a href="{% link soiree-entreprise.html %}"
+                                            class="nav-link Navbar_nav-link mt-0 pt-0">Soirée entreprise </a>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link animation-photoboot.html %}">Animation Photobooth</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link soiree-blind-test-paris.html %}">Soirée blind test paris</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link 1-minute-defi.html %}">1 minute défi</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link dj-soiree-dansante.html %}">DJ soirée dansante</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link karaoke.html %}">Karaoké</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link jeux-video.html %}">Jeux vidéo</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link jeux-en-bois2.html %}">Jeux en bois</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link cluedo-geant.html %}">Cluedo Géant</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link Navbar_nav-link pt-0 mt-0" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Locations
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item nav-link Navbar_nav-link selected"
+                                            href="{% link buzzers.html %}">Buzzers</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link location-jeux-en-bois.html %}">Jeux en bois</a>
+                                        <a class="dropdown-item nav-link Navbar_nav-link"
+                                            href="{% link polaroids.html %}">Polaroïds</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link Navbar_nav-link" href="{% link temoignages.html %}">Témoignages</a>
+                            </li>
+                            <li class="nav-item Navbar_nav-item">
+                                <a class="nav-link Navbar_nav-link" href="{% link contact.html %}">Contact</a>
+                            </li>
+                    </div>
+            </div>
+            <div class="col-md-2">
+                <li class="nav-item Navbar_nav-item">
+                    <a class="nav-link Navbar_nav-link Navbar_nav-link-button mt-0"
+                        href="{% link devis.html %}">Devis</a>
+                </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+</section>
